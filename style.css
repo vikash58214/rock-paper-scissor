@@ -1,0 +1,345 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #8cc461;
+}
+.score-board {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  margin: auto;
+  margin-right: 20%;
+  margin-top: 40px;
+  height: 150px;
+  border: 2px white solid;
+  border-radius: 5px;
+}
+h1 {
+  width: 200px;
+  margin-left: 10px;
+  color: white;
+}
+
+.cmp-score {
+  background: white;
+  width: 100px;
+
+  color: black;
+  float: right;
+  height: 100px;
+  margin-left: 50%;
+  border-radius: 5px;
+}
+.your-score {
+  background: white;
+  width: 100px;
+  color: black;
+  border-radius: 5px;
+  margin-left: 2%;
+  height: 100px;
+}
+.p-score {
+  margin-top: 0px;
+  text-align: center;
+  width: 70%;
+  margin-left: 15px;
+  margin-bottom: 1px;
+}
+.p-scoree {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.bg-img {
+  width: 120px;
+}
+.game-component {
+  width: 800px;
+  margin-left: 25%;
+  position: relative;
+}
+.object {
+  display: block;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 700px;
+  height: 500px;
+}
+.object1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 700px;
+  height: 500px;
+}
+.game {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.triangle {
+  width: 70%;
+  top: 0;
+  transform: rotate(180deg);
+  z-index: -2;
+}
+.rock {
+  position: absolute;
+  top: 60;
+  left: 150;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border: 15px rgb(21, 96, 246) solid;
+  justify-content: center;
+  border-radius: 50%;
+}
+.scissor {
+  position: absolute;
+  right: 150;
+  top: 60;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border: 15px rgb(124, 36, 124) solid;
+  justify-content: center;
+  border-radius: 50%;
+}
+.paper {
+  position: absolute;
+  left: 300;
+  bottom: 90;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border: 15px goldenrod solid;
+  justify-content: center;
+  border-radius: 50%;
+}
+.choice-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.rock1 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.paper1 {
+  position: absolute;
+  top: 30px;
+  right: 39px;
+}
+.scissors1 {
+  position: absolute;
+  left: 30px;
+  bottom: 25;
+}
+.rules {
+  position: absolute;
+  bottom: 90;
+  right: 0;
+  margin-right: 30px;
+  width: 100px;
+  height: 30px;
+  background: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px white solid;
+  color: white;
+  font-weight: bold;
+}
+.next {
+  display: none;
+  position: absolute;
+  bottom: 90;
+  right: 120;
+  margin-right: 30px;
+  width: 100px;
+  height: 30px;
+  background: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px white solid;
+  color: white;
+  font-weight: bold;
+}
+.popup {
+  display: none;
+  position: relative;
+  width: 240px;
+  height: 300px;
+  position: fixed;
+  bottom: 20%;
+  right: 2%;
+  background-color: #004429;
+  color: white;
+  padding: 20px;
+  border: 5px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 999;
+}
+.close-popup {
+  position: absolute;
+  top: -30;
+  right: -20;
+  background: #ff0000;
+  color: white;
+  font-weight: bold;
+  border: 4px white solid;
+  font-size: x-large;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.button {
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+.my-move-rock {
+  display: none;
+  margin-top: 150px;
+  position: relative;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border: 10px rgb(21, 96, 246) solid;
+  border-radius: 50%;
+}
+.my-move-paper {
+  display: none;
+  position: absolute;
+  top: 0px;
+  margin-top: 150px;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border: 10px goldenrod solid;
+  border-radius: 50%;
+}
+.my-move-scissor {
+  display: none;
+  position: absolute;
+  top: 0px;
+  margin-top: 150px;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border: 10px rgb(124, 36, 124) solid;
+  border-radius: 50%;
+}
+.imgg {
+  margin-left: 10px;
+  margin-top: 13px;
+}
+
+.comp-paper {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  margin-top: 150px;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border: 10px goldenrod solid;
+  border-radius: 50%;
+}
+.comp-rock {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  margin-top: 150px;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border: 10px rgb(21, 96, 246) solid;
+  border-radius: 50%;
+}
+.comp-scissor {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  margin-top: 150px;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border: 10px rgb(124, 36, 124) solid;
+
+  border-radius: 50%;
+}
+.title {
+  position: absolute;
+  top: 130px;
+  width: 300px;
+  display: none;
+  align-items: center;
+  left: 200px;
+}
+.end-h3 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+.play-again {
+  background: white;
+  color: #6b6b6b;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+}
+.play-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.you-picked {
+  position: absolute;
+  top: -80;
+  left: 5;
+  color: white;
+  text-align: center;
+  width: 110px;
+  font-size: large;
+}
+.game-rule {
+  margin-top: 0;
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 0;
+}
+ul {
+  list-style-type: square;
+}
+li::marker {
+  color: orange;
+}

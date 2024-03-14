@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="score-board">
+      <h1>ROCK PAPER SCISSORS</h1>
+      <div class="cmp-score">
+        <p class="p-score">Computer Score</p>
+        <p class="p-scoree" id="com-score">0</p>
+      </div>
+      <div class="your-score">
+        <p class="p-score">Your Score</p>
+        <p class="p-scoree" id="my-score">0</p>
+      </div>
+    </div>
+    <div class="game-component">
+      <div class="object" id="object">
+        <div class="game">
+          <img class="triangle" src="triangle.png" />
+          <div class="rock">
+            <button class="button" value="1" onclick="play()" id="rockk">
+              <img src="icons8-fist-67 1.png" />
+            </button>
+          </div>
+          <div class="scissor" id="scissor-btn">
+            <button class="button"><img src="17911 1.png" /></button>
+          </div>
+          <div class="paper">
+            <button class="button" value="2" id="paper-btn">
+              <img src="icons8-hand-64 1.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="object1">
+        <div class="title" id="end-title">
+          <h3 class="end-h3" id="end-h3">YOU WIN</h3>
+          <div class="play-div">
+            <button class="play-again" id="playAgain">PLAY AGAIN</button>
+          </div>
+        </div>
+        <div class="my-move-rock" id="your-rock">
+          <p class="you-picked">YOU PICKED</p>
+          <img class="imgg" src="icons8-fist-67 1.png" />
+        </div>
+        <div class="my-move-paper" id="your-paper">
+          <p class="you-picked">YOU PICKED</p>
+          <img class="imgg" src="icons8-hand-64 1.png" />
+        </div>
+        <div class="my-move-scissor" id="your-scissor">
+          <p class="you-picked">YOU PICKED</p>
+          <img class="imgg" src="17911 1.png" />
+        </div>
+
+        <div class="comp-rock" id="comp-rock">
+          <p class="you-picked">PC PICKED</p>
+          <img class="imgg" src="icons8-fist-67 1.png" />
+        </div>
+        <div class="comp-paper" id="comp-paper">
+          <p class="you-picked">PC PICKED</p>
+          <img class="imgg" src="icons8-hand-64 1.png" />
+        </div>
+        <div class="comp-scissor" id="comp-scissor">
+          <p class="you-picked">PC PICKED</p>
+          <img class="imgg" src="17911 1.png" />
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup">
+      <h3 class="game-rule">Game Rules</h3>
+      <ul>
+        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+        <li>
+          Agree ahead of time whether you’ll count off “rock, paper, scissors,
+          shoot” or just “rock, paper, scissors.”
+        </li>
+        <li>
+          Use rock, paper, scissors to settle minor decisions or simply play to
+          pass the time
+        </li>
+        <li>
+          If both players lay down the same hand, each player lays down another
+          hand
+        </li>
+      </ul>
+      <button class="close-popup" id="closePopup">X</button>
+    </div>
+    <button class="rules" id="popupButton">RULES</button>
+    <button class="next" id="next">Next</button>
+    <script src="./index.js"></script>
+  </body>
+</html>
